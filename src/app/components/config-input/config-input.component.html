@@ -1,0 +1,33 @@
+<div fxLayout='column' fxLayoutAlign='space-around center' style="width:100%; height:100%;">
+
+  <mat-form-field class="form-field">
+    <input matInput placeholder="xGrav" value="xGrav" [(ngModel)]="xGrav" (ngModelChange)='onInputChange()'>
+  </mat-form-field>
+
+  <mat-form-field class="form-field">
+    <input matInput placeholder="yGrav" value="yGrav" [(ngModel)]="yGrav" (ngModelChange)='onInputChange()'>
+  </mat-form-field>
+
+  <mat-form-field class="form-field">
+    <input matInput placeholder="density" value="density" [(ngModel)]="density" (ngModelChange)='onInputChange()'>
+  </mat-form-field>
+
+  <mat-form-field class="form-field">
+    <input matInput placeholder="friction" value="friction" [(ngModel)]="friction" (ngModelChange)='onInputChange()'>
+  </mat-form-field>
+
+  <mat-form-field class="form-field">
+    <input matInput placeholder="restitution" value="restitution" [(ngModel)]="restitution" (ngModelChange)='onInputChange()'>
+  </mat-form-field>
+
+  <mat-form-field class="form-field">
+    <input matInput placeholder="radius" value="radius" [(ngModel)]="radius" (ngModelChange)='onInputChange()'>
+  </mat-form-field>
+
+
+
+  <div class="form-field">
+    <!-- <input type="file" value="bg" [(ngModel)]="bg" (ngModelChange)='changeBG()'> -->
+    <input type="file" (change)="changeBG($event)" #fileInput>
+  </div>
+</div>

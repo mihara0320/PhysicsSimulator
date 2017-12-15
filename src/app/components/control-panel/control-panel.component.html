@@ -1,0 +1,38 @@
+<!-- <div fxLayout='row' fxLayoutAlign='space-around center' style="width:80%; height:100%">
+  <button mat-fab mat-button-toggle value="field">Field</button>
+  <button mat-fab mat-button-toggle value="object">Object</button>
+  <button mat-fab mat-button-toggle value="pin">Pin</button>
+</div> -->
+
+<mat-button-toggle-group #group="matButtonToggleGroup"
+  fxLayout='row' fxLayoutAlign='space-around center'
+  style="width:99%; height:100%">
+
+  <mat-button-toggle fxFlex='5' fxLayout='row' fxLayoutAlign='space-around center'
+    value="Field" (click)="onOptionChange()"> Field </mat-button-toggle>
+  <mat-button-toggle fxFlex='5' fxLayout='row' fxLayoutAlign='space-around center'
+    value="Object" (click)="onOptionChange()"> Object </mat-button-toggle>
+  <mat-button-toggle fxFlex='5' fxLayout='row' fxLayoutAlign='space-around center'
+    value="Pin" (click)="onOptionChange()"> Pin </mat-button-toggle>
+  <mat-button-toggle fxFlex='8' fxLayout='row' fxLayoutAlign='space-around center'
+    value="Launcher" (click)="onOptionChange()"> Launcher </mat-button-toggle>
+  <mat-button-toggle fxFlex='8' fxLayout='row' fxLayoutAlign='space-around center'
+    value="Sensor" (click)="onOptionChange()"> Sensor </mat-button-toggle>
+  <mat-button-toggle fxFlex='5' fxLayout='row' fxLayoutAlign='space-around center'
+    value="Draw" (click)="onOptionChange()"> Draw </mat-button-toggle>
+
+
+  <div fxFlex='10'>Current: <strong>{{group.value}}</strong></div>
+
+  <mat-button-toggle fxFlex='8' fxLayout='row' fxLayoutAlign='space-around center'
+    value="Simulate" (click)="onOptionChange()"> Simulate </mat-button-toggle>
+  <mat-button-toggle fxFlex='8' fxLayout='row' fxLayoutAlign='space-around center'
+    value="Select" (click)="onOptionChange()"> Select </mat-button-toggle>
+  <mat-button-toggle fxFlex='5' fxLayout='row' fxLayoutAlign='space-around center'
+    value="Undo" (click)="onOptionChange()"> Undo </mat-button-toggle>
+  <mat-button-toggle fxFlex='8' fxLayout='row' fxLayoutAlign='space-around center'
+    value="DeleteAll" (click)="onOptionChange()"> Delete All </mat-button-toggle>
+  <mat-button-toggle fxFlex='5' fxLayout='row' fxLayoutAlign='space-around center'
+    value="Save" (click)="onOptionChange()"> Save </mat-button-toggle>
+
+</mat-button-toggle-group>

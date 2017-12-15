@@ -1,0 +1,45 @@
+<h1 mat-dialog-title>Simulation</h1>
+<div mat-dialog-content fxLayout='column'>
+  <mat-form-field>
+    <input matInput placeholder="xCordinate" name="xCordinate" [(ngModel)]="xCordinate">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="yCordinate" name="yCordinate" [(ngModel)]="yCordinate">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Amount of simulating balls" name="amount" [(ngModel)]="amount">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Interval betweem creation of balls (ms)" name="interval" [(ngModel)]="interval">
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" (click)='startSimulation()'> Start </button>
+</div>
+<!--
+<form id="addPostForm">
+<form (submit)="onAddPostSubmit()" id="addPostForm">
+
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" [(ngModel)]="title" name="title">
+  </div>
+
+  <div class="form-group">
+    <label>Content</label>
+    <textarea form="addPostForm" class="form-control" [(ngModel)]="content" name="content"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label>Category</label>
+    <select class="form-control" [(ngModel)]="category" name="category">
+      <option value="Study">Study</option>
+      <option value="Life">Life</option>
+      <option value="Others">Others</option>
+    </select>
+  </div>
+
+  <div class="item-right">
+    <input type="submit" class="btn btn-primary" value="Post">
+  </div>
+
+</form> -->

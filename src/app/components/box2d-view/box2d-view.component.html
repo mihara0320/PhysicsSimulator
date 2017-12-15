@@ -1,0 +1,27 @@
+<div fxLayout="column">
+  <div fxFlex='10' fxLayout='row'>
+    <div fxFlex='20'>
+      Total Ball Launch: {{totalLaunch}}
+    </div>
+    <div fxFlex='20'>
+      Total Contact: {{totalContact}}
+    </div>
+    <div fxFlex='20'>
+      Possibility: {{currentPossibility | percent }}
+    </div>
+  </div>
+  <div fxFlex='10' fxLayout='row' fxLayoutAlign='end'>
+    <div fxFlex='10'>
+      x: {{currentMousePos.x}}
+    </div>
+    <div fxFlex='10'>
+      y: {{currentMousePos.y}}
+    </div>
+  </div>
+  <div fxFlex='80'>
+    <canvas id="physics_canvas" width="960" height="540" #physics_canvas></canvas>
+  </div>
+
+</div>
+
+<!-- <canvas id="render_canvas" width="960" height="540" #render_canvas></canvas> -->
